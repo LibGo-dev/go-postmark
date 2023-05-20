@@ -1,2 +1,16 @@
-- name: Codecov
-  uses: codecov/codecov-action@v3.1.4
+name: Codecov
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
