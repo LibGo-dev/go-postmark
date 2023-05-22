@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	postmarkURL = "https://api.postmarkapp.com"
+	postmarkURL = `https://api.postmarkapp.com`
 )
 
 const (
