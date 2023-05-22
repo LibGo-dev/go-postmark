@@ -1,4 +1,4 @@
-module github.com/signalbuy/go-postmark
+module github.com/LibGo-dev/go-postmark
 
 go 1.19
 
